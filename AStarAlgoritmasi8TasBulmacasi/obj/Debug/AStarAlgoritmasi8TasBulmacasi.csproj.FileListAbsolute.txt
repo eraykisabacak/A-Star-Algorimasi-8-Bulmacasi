@@ -1,0 +1,10 @@
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.exe.config
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.exe
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.pdb
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csprojAssemblyReference.cache
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.Properties.Resources.resources
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csproj.GenerateResource.cache
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csproj.CoreCompileInputs.cache
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.exe
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.pdb
+C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.AStar8Bulmaca.resources
