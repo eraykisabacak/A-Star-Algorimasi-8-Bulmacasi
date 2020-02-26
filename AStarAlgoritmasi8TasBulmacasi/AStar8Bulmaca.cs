@@ -19,7 +19,7 @@ namespace AStarAlgoritmasi8TasBulmacasi
 
         List<node> FrontHere = new List<node>();
         List<node> CheckedList = new List<node>();
-        List<string> actions = new List<string>();
+        static List<string> actions = new List<string>();
 
         int[,] baslangicDurumu;
         int[,] amacDurumu;
@@ -349,6 +349,7 @@ namespace AStarAlgoritmasi8TasBulmacasi
         private void btnCoz_Click(object sender, EventArgs e)
         {
                 txtSonuc.Text = "";
+                txtActions.Text = "";
                 selected_depth = 0;
                 found = false;
                 Max_Depth = 20;
@@ -498,6 +499,10 @@ namespace AStarAlgoritmasi8TasBulmacasi
                     btn.Name = "button" + a.ToString();
                     btn.Text = state[i,j].ToString();
                     btn.Size = new System.Drawing.Size(75,85);
+                    btn.BackColor = Color.Red;
+                    btn.ForeColor = Color.White;
+                    int size = 20;
+                    btn.Font = new Font(btn.Font.FontFamily, size);
                     btn.Location = new Point(78 + (j * 81), 181 + (i * 91));
                     this.Controls.Add(btn);
                     a++;
@@ -507,16 +512,18 @@ namespace AStarAlgoritmasi8TasBulmacasi
 
         int zeroLocation1;
         int zeroLocation2;
+        
 
         void startTable()
         {
             zeroLocation1 = zero_position(baslangicDurumu);
             zeroLocation2 = zero_position(baslangicDurumu, false);
-            //MessageBox.Show(zeroLocation2 + " " + zeroLocation2);
+            MessageBox.Show(zeroLocation2 + " " + zeroLocation2);
 
             for(int i = actions.Count - 1; i >= 0; i--)
             {
-                //MessageBox.Show(i + " " + actions[i]);
+                System.Threading.Thread.Sleep(1000);
+                MessageBox.Show(i + " " + actions[i]);
                 if (actions[i] == "left")
                 {
                     leftUI(zeroLocation1, zeroLocation2);
@@ -534,13 +541,13 @@ namespace AStarAlgoritmasi8TasBulmacasi
                     downUI(zeroLocation1, zeroLocation2);
                 }
                 txtActions.Text += actions[i] + " ";
+               
             }            
         }
         
         void rightUI(int i , int j)
         {
             int a = numberUI(i, j);
-            //MessageBox.Show("i " + i + "j " + j);
             
             Button zero = this.Controls.Find("button" + a,true).FirstOrDefault() as Button;
 
@@ -553,7 +560,6 @@ namespace AStarAlgoritmasi8TasBulmacasi
         void leftUI(int i, int j)
         {
             int a = numberUI(i, j);
-            //MessageBox.Show("i " + i + "j " + j);
 
             Button zero = this.Controls.Find("button" + a, true).FirstOrDefault() as Button;
 
@@ -566,7 +572,6 @@ namespace AStarAlgoritmasi8TasBulmacasi
         void upUI(int i, int j)
         {
             int a = numberUI(i, j);
-//            MessageBox.Show("i " + i + "j " + j);
 
             Button zero = this.Controls.Find("button" + a, true).FirstOrDefault() as Button;
 
@@ -579,7 +584,6 @@ namespace AStarAlgoritmasi8TasBulmacasi
         void downUI(int i, int j)
         {
             int a = numberUI(i, j);
-          // MessageBox.Show("i " + i + "j " + j);
 
             Button zero = this.Controls.Find("button" + a, true).FirstOrDefault() as Button;
 
@@ -605,6 +609,11 @@ namespace AStarAlgoritmasi8TasBulmacasi
                 a = j + 6;
             }
             return a;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
