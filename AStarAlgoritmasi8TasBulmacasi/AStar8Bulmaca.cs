@@ -27,145 +27,7 @@ namespace AStarAlgoritmasi8TasBulmacasi
         bool found = false;
         int Max_Depth = 20;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            txtSonuc.Text = "";
-            selected_depth = 0;
-            found = false;
-            Max_Depth = 20;
-            baslangicDurumu = new int[3,3];
-            amacDurumu = new int[3,3];
-            FrontHere.Clear();
-            CheckedList.Clear();
-            actions.Clear();
-
-            string[] bSayilar = txtBaslangic.Text.Split(',');
-            string[] aSayilar = txtAmac.Text.Split(',');
-
-            if (aSayilar.Length < 9 || bSayilar.Length < 9 || aSayilar.Contains("") || bSayilar.Contains(""))
-            {
-                MessageBox.Show("Lütfen 9 Sayı Giriniz ve ',' ile ayırınız ");
-                return;
-            }
-
-            int count = 0;
-
-            for (int i = 0; i < 3; i++)
-            {
-                for(int j = 0; j < 3; j++)
-                {
-                    baslangicDurumu[i,j] = int.Parse(bSayilar[count++]);
-                }
-            }
-
-            count = 0;
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    amacDurumu[i,j] = int.Parse(aSayilar[count++]);
-                }
-            }
-
-            node start = new node()
-            {
-                state = baslangicDurumu,
-                depth = 0
-            };
-
-            FrontHere.Add(start);
-            
-
-            node get_state()
-            {
-                node what = new node();
-                int index = 0;
-                int selected_index = 0;
-                int min_f = Max_Depth + 9;
-                foreach (node nd in FrontHere)
-                {
-                    if (nd.depth + h(nd.state) < min_f)
-                    {
-                        min_f = nd.depth + h(nd.state);
-                        what.state = nd.state;
-                        what.depth = nd.depth;
-                        what.action = nd.action;
-                        selected_index = index;
-                    }
-                    index++;
-                }
-
-                FrontHere.RemoveAt(selected_index);
-
-                return what;
-            }
-
-            // [true,false]
-            print_state(baslangicDurumu);
-
-            while (FrontHere.Count != 0 && !found && selected_depth <= Max_Depth)
-            {
-                node best_result = get_state();
-                if(match_array(best_result.state, amacDurumu))
-                {
-                    print_path(best_result.state, best_result.action);
-                    found = true;
-                    MessageBox.Show("FOUND");
-                }
-                else
-                {
-                    if(canRight(best_result.state) && !wasChecked(right(best_result.state)))
-                    {
-                        node data = new node();
-                        data.depth = best_result.depth + 1;
-                        data.state = right(best_result.state);
-                        data.action = "right";
-
-                        FrontHere.Add(data);
-                    }
-
-                    if(canLeft(best_result.state) && !wasChecked(left(best_result.state)))
-                    {
-                        node data = new node();
-                        data.depth = best_result.depth + 1;
-                        data.state = left(best_result.state);
-                        data.action = "left";
-
-                        FrontHere.Add(data);
-                    }
-
-                    if(canDown(best_result.state) && !wasChecked(down(best_result.state)))
-                    {
-                        node data = new node();
-                        data.depth = best_result.depth + 1;
-                        data.state = down(best_result.state);
-                        data.action = "down";
-
-                        FrontHere.Add(data);
-                    }
-
-                    if(canUp(best_result.state) && !wasChecked(up(best_result.state)))
-                    {
-                        node data = new node();
-                        data.depth = best_result.depth + 1;
-                        data.state = up(best_result.state);
-                        data.action = "up";
-
-                        FrontHere.Add(data);
-                    }
-
-                    selected_depth = best_result.depth;
-                    CheckedList.Add(best_result);
-                }
-                if (selected_depth > Max_Depth)
-                {
-                    MessageBox.Show("Can't Solve!");
-                    return;
-                }
-            }
-        }
-
-
+       
 
         bool canRight(int[,] state)
         {
@@ -482,6 +344,267 @@ namespace AStarAlgoritmasi8TasBulmacasi
         private void txtBaslangic_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',';
+        }
+
+        private void btnCoz_Click(object sender, EventArgs e)
+        {
+                txtSonuc.Text = "";
+                selected_depth = 0;
+                found = false;
+                Max_Depth = 20;
+                baslangicDurumu = new int[3, 3];
+                amacDurumu = new int[3, 3];
+                FrontHere.Clear();
+                CheckedList.Clear();
+                actions.Clear();
+
+                string[] bSayilar = txtBaslangic.Text.Split(',');
+                string[] aSayilar = txtAmac.Text.Split(',');
+
+                if (aSayilar.Length < 9 || bSayilar.Length < 9 || aSayilar.Contains("") || bSayilar.Contains(""))
+                {
+                    MessageBox.Show("Lütfen 9 Sayı Giriniz ve ',' ile ayırınız ");
+                    return;
+                }
+
+                int count = 0;
+
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        baslangicDurumu[i, j] = int.Parse(bSayilar[count++]);
+                    }
+                }
+
+                count = 0;
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        amacDurumu[i, j] = int.Parse(aSayilar[count++]);
+                    }
+                }
+
+                node start = new node()
+                {
+                    state = baslangicDurumu,
+                    depth = 0
+                };
+
+                FrontHere.Add(start);
+
+
+                node get_state()
+                {
+                    node what = new node();
+                    int index = 0;
+                    int selected_index = 0;
+                    int min_f = Max_Depth + 9;
+                    foreach (node nd in FrontHere)
+                    {
+                        if (nd.depth + h(nd.state) < min_f)
+                        {
+                            min_f = nd.depth + h(nd.state);
+                            what.state = nd.state;
+                            what.depth = nd.depth;
+                            what.action = nd.action;
+                            selected_index = index;
+                        }
+                        index++;
+                    }
+
+                    FrontHere.RemoveAt(selected_index);
+
+                    return what;
+                }
+
+                // [true,false]
+                print_state(baslangicDurumu);
+
+                while (FrontHere.Count != 0 && !found && selected_depth <= Max_Depth)
+                {
+                    node best_result = get_state();
+                    if (match_array(best_result.state, amacDurumu))
+                    {
+                        print_path(best_result.state, best_result.action);
+                        found = true;
+                        MessageBox.Show("FOUND");
+                        printUI(baslangicDurumu);
+                        startTable();
+                    }
+                    else
+                    {
+                        if (canRight(best_result.state) && !wasChecked(right(best_result.state)))
+                        {
+                            node data = new node();
+                            data.depth = best_result.depth + 1;
+                            data.state = right(best_result.state);
+                            data.action = "right";
+
+                            FrontHere.Add(data);
+                        }
+
+                        if (canLeft(best_result.state) && !wasChecked(left(best_result.state)))
+                        {
+                            node data = new node();
+                            data.depth = best_result.depth + 1;
+                            data.state = left(best_result.state);
+                            data.action = "left";
+
+                            FrontHere.Add(data);
+                        }
+
+                        if (canDown(best_result.state) && !wasChecked(down(best_result.state)))
+                        {
+                            node data = new node();
+                            data.depth = best_result.depth + 1;
+                            data.state = down(best_result.state);
+                            data.action = "down";
+
+                            FrontHere.Add(data);
+                        }
+
+                        if (canUp(best_result.state) && !wasChecked(up(best_result.state)))
+                        {
+                            node data = new node();
+                            data.depth = best_result.depth + 1;
+                            data.state = up(best_result.state);
+                            data.action = "up";
+
+                            FrontHere.Add(data);
+                        }
+
+                        selected_depth = best_result.depth;
+                        CheckedList.Add(best_result);
+                    }
+                    if (selected_depth > Max_Depth)
+                    {
+                        MessageBox.Show("Can't Solve!");
+                        return;
+                    }
+                }
+            
+        }
+
+        void printUI(int[,] state)
+        {
+            int a = 0;
+            for(int i = 0; i < 3; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    Button btn = new Button();
+                    btn.Name = "button" + a.ToString();
+                    btn.Text = state[i,j].ToString();
+                    btn.Size = new System.Drawing.Size(75,85);
+                    btn.Location = new Point(78 + (j * 81), 181 + (i * 91));
+                    this.Controls.Add(btn);
+                    a++;
+                }
+            }
+        }
+
+        int zeroLocation1;
+        int zeroLocation2;
+
+        void startTable()
+        {
+            zeroLocation1 = zero_position(baslangicDurumu);
+            zeroLocation2 = zero_position(baslangicDurumu, false);
+            //MessageBox.Show(zeroLocation2 + " " + zeroLocation2);
+
+            for(int i = actions.Count - 1; i >= 0; i--)
+            {
+                //MessageBox.Show(i + " " + actions[i]);
+                if (actions[i] == "left")
+                {
+                    leftUI(zeroLocation1, zeroLocation2);
+                }
+                else if(actions[i] == "right")
+                {
+                    rightUI(zeroLocation1, zeroLocation2);
+                }
+                else if(actions[i] == "up")
+                {
+                    upUI(zeroLocation1, zeroLocation2);
+                }
+                else if(actions[i] == "down")
+                {
+                    downUI(zeroLocation1, zeroLocation2);
+                }
+                txtActions.Text += actions[i] + " ";
+            }            
+        }
+        
+        void rightUI(int i , int j)
+        {
+            int a = numberUI(i, j);
+            //MessageBox.Show("i " + i + "j " + j);
+            
+            Button zero = this.Controls.Find("button" + a,true).FirstOrDefault() as Button;
+
+            Button number = this.Controls.Find("button" + (a + 1), true).FirstOrDefault() as Button;
+            zeroLocation2 = j + 1;
+            zero.Text = number.Text;
+            number.Text = "0";
+        }
+
+        void leftUI(int i, int j)
+        {
+            int a = numberUI(i, j);
+            //MessageBox.Show("i " + i + "j " + j);
+
+            Button zero = this.Controls.Find("button" + a, true).FirstOrDefault() as Button;
+
+            Button number = this.Controls.Find("button" + (a - 1), true).FirstOrDefault() as Button;
+            zeroLocation2 = j - 1;
+            zero.Text = number.Text;
+            number.Text = "0";
+        }
+
+        void upUI(int i, int j)
+        {
+            int a = numberUI(i, j);
+//            MessageBox.Show("i " + i + "j " + j);
+
+            Button zero = this.Controls.Find("button" + a, true).FirstOrDefault() as Button;
+
+            Button number = this.Controls.Find("button" + (a - 3), true).FirstOrDefault() as Button;
+            zeroLocation1 = i - 1;
+            zero.Text = number.Text;
+            number.Text = "0";
+        }
+
+        void downUI(int i, int j)
+        {
+            int a = numberUI(i, j);
+          // MessageBox.Show("i " + i + "j " + j);
+
+            Button zero = this.Controls.Find("button" + a, true).FirstOrDefault() as Button;
+
+            Button number = this.Controls.Find("button" + (a + 3), true).FirstOrDefault() as Button;
+            zeroLocation1 = i + 1;
+            zero.Text = number.Text;
+            number.Text = "0";
+        }
+
+        int numberUI(int i,int j)
+        {
+            int a = 0;
+            if (i == 0 && j < 3)
+            {
+                a = j;
+            }
+            else if (i == 1)
+            {
+                a = j + 3;
+            }
+            else if (i == 2)
+            {
+                a = j + 6;
+            }
+            return a;
         }
     }
 }
