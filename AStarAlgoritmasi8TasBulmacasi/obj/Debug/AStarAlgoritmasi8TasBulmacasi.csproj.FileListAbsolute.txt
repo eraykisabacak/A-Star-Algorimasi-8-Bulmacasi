@@ -8,3 +8,23 @@ C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBu
 C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.exe
 C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.pdb
 C:\Users\nefre\source\repos\AStarAlgoritmasi8TasBulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.AStar8Bulmaca.resources
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.exe.config
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.exe
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.pdb
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csprojAssemblyReference.cache
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.AStar8Bulmaca.resources
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.Properties.Resources.resources
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csproj.GenerateResource.cache
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csproj.CoreCompileInputs.cache
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.exe
+C:\Users\nefre\Desktop\A star yapay zeka\A-Star-Algorimasi-8-Bulmacasi\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.pdb
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.exe.config
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.exe
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\bin\Debug\AStarAlgoritmasi8TasBulmacasi.pdb
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csprojAssemblyReference.cache
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.AStar8Bulmaca.resources
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.Properties.Resources.resources
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csproj.GenerateResource.cache
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.csproj.CoreCompileInputs.cache
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.exe
+C:\Users\nefre\Desktop\173311068-AliErayKısabacak\AStarAlgoritmasi8TasBulmacasi\obj\Debug\AStarAlgoritmasi8TasBulmacasi.pdb

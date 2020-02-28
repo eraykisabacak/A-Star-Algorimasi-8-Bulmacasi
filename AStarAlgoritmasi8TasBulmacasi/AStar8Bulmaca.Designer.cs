@@ -119,7 +119,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AStar8Bulmaca";
-            this.Text = "Form1";
+            this.Text = "A Star Algoritması 8 Taş";
             this.ResumeLayout(false);
             this.PerformLayout();
 
