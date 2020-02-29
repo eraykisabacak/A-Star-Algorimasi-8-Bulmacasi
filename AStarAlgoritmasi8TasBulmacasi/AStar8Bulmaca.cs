@@ -17,6 +17,16 @@ namespace AStarAlgoritmasi8TasBulmacasi
             InitializeComponent();
         }
 
+        //////
+        ///
+        ///     Ali Eray KISABACAK 
+        ///                        
+        ///                        http://www.eraykisabacak.com/
+        ///                        https://www.linkedin.com/in/eraykisabacak/
+        ///                        https://github.com/eraykisabacak
+        /// 
+        /// ///
+
         int[,] baslangicDurumu;
         public static int[,] amacDurumu;
         int selected_depth = 0;
@@ -190,7 +200,7 @@ namespace AStarAlgoritmasi8TasBulmacasi
                         index++;
                     }
 
-                   // node.FrontHere.RemoveAt(selected_index);
+                    node.FrontHere.RemoveAt(selected_index);
 
                     return what;
                 }
