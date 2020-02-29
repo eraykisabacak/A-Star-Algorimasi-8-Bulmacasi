@@ -162,5 +162,6 @@ C# ile A* (Star) Algoritması kullanarak 8 Taş Bulmacasını çözmek
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3>Kodlar:  <a href="https://github.com/eraykisabacak/A-Star-Algorimasi-8-Bulmacasi">https://github.com/eraykisabacak/A-Star-Algorimasi-8-Bulmacasi</a> </h3>
+<h3><a href="https://github.com/eraykisabacak/A-Star-Algorimasi-8-Bulmacasi">Kodlar</a></h3>
+<h3><a href="http://eraykisabacak.com/c-ile-a-star-algoritmasi-kullanarak-8-tas-bulmacasini-cozmek-yapay-zeka-solving-8-stone-puzzles-using-a-star-algorithm-with-c-artificial-intelligence/">Blog Sayfası</a></h3>
 <!-- /wp:heading -->
